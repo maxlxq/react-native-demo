@@ -8,31 +8,32 @@
  * @flow strict-local
  */
 
-import React, { useContext, useCallback } from 'react'
-import { View, Text, Pressable, StatusBar } from 'react-native'
-import { ThemeContext } from '@THEME'
-import { APP_THEME } from '@CONSTANTS/App'
+import {APP_THEME} from '@CONSTANTS/App'
+import {ThemeContext} from '@THEME'
+import React, {useCallback, useContext} from 'react'
+import {Pressable, StatusBar, Text, View} from 'react-native'
 
-const Setting = () => {
-  const { styles = {}, themeName, changeTheme } = useContext(ThemeContext) || {}
-  const onChangeTheme = useCallback(() => {
-    if (APP_THEME.Light === themeName) {
-      changeTheme(APP_THEME.Dark)
-      StatusBar.setBarStyle('light-content')
-    } else {
-      changeTheme(APP_THEME.Light)
-      StatusBar.setBarStyle('dark-content')
-    }
-  }, [themeName, changeTheme])
+const Setting =
+    () => {
+      const {styles = {}, themeName, changeTheme} =
+          useContext(ThemeContext) || {}
+      const onChangeTheme = useCallback(() => {
+        if (APP_THEME.Light === themeName) {
+          changeTheme(APP_THEME.Dark)
+          StatusBar.setBarStyle('light-content')
+        } else {
+          changeTheme(APP_THEME.Light)
+          StatusBar.setBarStyle('dark-content')
+        }
+      }, [ themeName, changeTheme ])
 
-  return (
-    <View style={styles.container}>
-      <Text style={styles.bold}>Setting</Text>
+      return (
+          <View style = {styles.container}><Text style = {styles.bold}>Setting<
+              /Text>
       <Pressable onPress={onChangeTheme} style={styles.btnBox}>
         <Text style={styles.btnText}>改变主题</Text>
-      </Pressable>
-    </View>
-  )
-}
+          </Pressable>
+    </View>)
+    }
 
 export default Setting
