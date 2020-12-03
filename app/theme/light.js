@@ -1,7 +1,8 @@
 const light = {
   backgroundColor: '#fff',
   fontColor: '#333',
-  btxTextColor: '#eab433',
+  btxTextColor: '#cfcfcf',
+  btnColor: '#444841',
 }
 
 export default light

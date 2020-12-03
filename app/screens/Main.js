@@ -10,8 +10,8 @@
 
 import React, { useContext, useCallback } from 'react'
 import { View, Text, Pressable } from 'react-native'
-import { ThemeContext } from './App'
-import { APP_THEME } from '../constants/App'
+import { ThemeContext } from '@THEME'
+import { APP_THEME } from '@CONSTANTS/App'
 
 const Main = () => {
 	const { styles = {}, themeName, changeTheme } = useContext(ThemeContext) || {}
@@ -25,7 +25,7 @@ const Main = () => {
 	return (
 		<View style={styles.container}>
 			<Text style={styles.bold}>Main</Text>
-			<Pressable onPress={onChangeTheme}>
+			<Pressable onPress={onChangeTheme} style={styles.btnBox}>
 				<Text style={styles.btnText}>改变主题</Text>
 			</Pressable>
 		</View>

@@ -8,13 +8,11 @@
  * @flow strict-local
  */
 
-import React, { createContext, useState, useMemo } from 'react'
-import Main from './Main'
-import {APP_THEME} from '../constants/App'
-import {getStyles} from '../styles/styles'
-import {themes} from '../theme'
-
-export const ThemeContext = createContext(null)
+import React, { useState, useMemo } from 'react'
+import Main from '@SCREENS/Main'
+import { APP_THEME } from '@CONSTANTS/App'
+import { getStyles } from '@STYLES/styles'
+import { themes, ThemeContext } from '@THEME'
 
 export const App = () => {
   const [theme, changeTheme] = useState(APP_THEME.Light)

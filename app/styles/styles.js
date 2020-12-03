@@ -21,4 +21,14 @@ export const getStyles = colors => (StyleSheet.create({
     lineHeight: 20,
     fontFamily: 'PingFangSC-Regular',
   },
+  btnBox: {
+    height: 36,
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    borderRadius: 6,
+    backgroundColor: colors.btnColor,
+    margin: 8,
+  },
 }))

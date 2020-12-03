@@ -1,7 +1,8 @@
 const dark = {
   backgroundColor: '#202020',
   fontColor: '#bfbfbf',
-  btxTextColor: '#3ab75b',
+  btxTextColor: '#efefef',
+  btnColor: '#5c5ca2',
 }
 
 export default dark
