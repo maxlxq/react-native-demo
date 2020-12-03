@@ -1,69 +1,71 @@
-React-Native 相关功能介绍
-version: 0.63.3
+React-Native 相关功能介绍 version: 0.63.3
 
 - [ ] 页面基本组件
-    - [x] View
-    - [ ] Text
-    - [ ] Pressable
-    - [ ] ScrollView
-    - [ ] FlatList
-    - [ ] SectionList
-    - [ ] TextInput
-    - [ ] ...
+  - [x] View
+  - [ ] Text
+  - [ ] Pressable
+  - [ ] ScrollView
+  - [ ] FlatList
+  - [ ] SectionList
+  - [ ] TextInput
+  - [ ] ...
 - [x] 深色模式切换
-    - [x] 使用 context 实现
+  - [x] 使用 context 实现
 - [ ] 路由跳转
-    - [ ] 页面
-    - [ ] Tab
-    - [ ] 抽屉
-    - [ ] 配置规则
+  - [ ] 页面
+  - [ ] Tab
+  - [ ] 抽屉
+  - [ ] 配置规则
 - [ ] Redux
-    - [ ] action
-    - [ ] saga
-    - [ ] reducer
-    - [ ] store
+  - [ ] action
+  - [ ] saga
+  - [ ] reducer
+  - [ ] store
 - [ ] 组件划分和组合规则
 - [ ] 静态资源
 - [ ] 国际化
-    - [ ] i18n
+  - [ ] i18n
 - [ ] 热更新
-    - [ ] code-push
+  - [ ] code-push
 - [ ] 动画
 - [ ] 自动化测试
-    - [ ] detox
+  - [ ] detox
 - [ ] ESLint
 - [ ] Babel 配置
-    - [ ] [Alias 配置](https://segmentfault.com/a/1190000023069333)
+  - [ ] [Alias 配置](https://segmentfault.com/a/1190000023069333)
 - [ ] 埋点
-    - [ ] umeng
-    - [ ] baidu
+  - [ ] umeng
+  - [ ] baidu
 - [ ] 错误上报
 - [ ] 多环境
-    - [ ] iOS
-    - [ ] Android
+  - [ ] iOS
+  - [ ] Android
 - [ ] 打包
-    - [ ] iOS
-    - [ ] Android
-    - [ ] 脚本打包
-    - [ ] fastlane
-    - [ ] fir
-    - [ ] 自动上传应用市场
-- [ ] 原生方法导入RN
-    - [ ] OC代码编写模块
-    - [ ] Java代码编写模块
-    - [ ] RN引入使用
+  - [ ] iOS
+  - [ ] Android
+  - [ ] 脚本打包
+  - [ ] fastlane
+  - [ ] fir
+  - [ ] 自动上传应用市场
+- [ ] 原生方法导入 RN
+  - [ ] OC 代码编写模块
+  - [ ] Java 代码编写模块
+  - [ ] RN 引入使用
 - [ ] CI/CD
-    - [ ] jenkins自动打包
-    - [ ] 一键发布iOS
-    - [ ] 上传应用市场 Android
+  - [ ] jenkins 自动打包
+  - [ ] 一键发布 iOS
+  - [ ] 上传应用市场 Android
 - [ ] 支付
 - [ ] 第三方登录
 - [ ] 分享功能
-- [ ] 外链打开App
+- [ ] 外链打开 App
 - [ ] 性能优化
-    - [ ] 拆包
+  - [ ] 拆包
 - [ ] 微前端
 
 参考资料：
-- [在 babel.config.js 中配置 alias](https://segmentfault.com/a/1190000023069333) 需重新执行 `yarn start --reset-cache`
-- [主题切换, context 使用](https://zh-hans.reactjs.org/docs/context.html) 配合 hook 中 useContext 使用，详见 `/screens/App.js` 相关
+
+- [在 babel.config.js 中配置 alias](https://segmentfault.com/a/1190000023069333)
+  需重新执行 `yarn start --reset-cache`
+- [主题切换, context 使用](https://zh-hans.reactjs.org/docs/context.html) 配合
+  hook 中 useContext 使用，详见 `/screens/App.js` 相关
