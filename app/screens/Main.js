@@ -8,34 +8,36 @@
  * @flow strict-local
  */
 
-import React, { useContext, useMemo } from 'react'
-import { NavigationContainer, DefaultTheme } from '@react-navigation/native'
-import { createStackNavigator } from '@react-navigation/stack'
-import HomeScreen from '@SCREENS/home'
+import {DefaultTheme, NavigationContainer} from '@react-navigation/native'
+import {createStackNavigator} from '@react-navigation/stack'
 import Setting from '@SCREENS/control/Setting'
-import { ThemeContext } from '@THEME'
+import HomeScreen from '@SCREENS/home'
+import {ThemeContext} from '@THEME'
+import React, {useContext, useMemo} from 'react'
+
 import {APP_THEME} from '../constants/App'
 
 const Stack = createStackNavigator()
 
-const Main = () => {
-	const { themeName, colors } = useContext(ThemeContext) || {}
-	const dark = useMemo(() => themeName === APP_THEME.Dark, [themeName])
+const Main =
+    () => {
+      const {themeName, colors} = useContext(ThemeContext) || {}
+      const dark = useMemo(() => themeName === APP_THEME.Dark, [ themeName ])
 
-	const theme = {
-		...DefaultTheme,
-		dark,
-		colors,
-	}
+      const theme = {
+        ...DefaultTheme,
+        dark,
+        colors,
+      }
 
-	return (
-		<NavigationContainer theme={theme}>
-			<Stack.Navigator>
-				<Stack.Screen name='Home' component={HomeScreen} />
+      return (<NavigationContainer theme = {theme}><Stack.Navigator>
+              <Stack.Screen name = 'Home' component =
+               {
+                 HomeScreen
+               } />
 				<Stack.Screen name='Setting' component={Setting} />
-			</Stack.Navigator>
-		</NavigationContainer>
-	)
-}
+              </Stack.Navigator>
+		</NavigationContainer>)
+    }
 
 export default Main
