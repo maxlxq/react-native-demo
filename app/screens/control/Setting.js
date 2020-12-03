@@ -9,7 +9,7 @@
  */
 
 import React, { useContext, useCallback } from 'react'
-import { View, Text, Pressable } from 'react-native'
+import { View, Text, Pressable, StatusBar } from 'react-native'
 import { ThemeContext } from '@THEME'
 import { APP_THEME } from '@CONSTANTS/App'
 
@@ -18,8 +18,10 @@ const Setting = () => {
   const onChangeTheme = useCallback(() => {
     if (APP_THEME.Light === themeName) {
       changeTheme(APP_THEME.Dark)
+      StatusBar.setBarStyle('light-content')
     } else {
       changeTheme(APP_THEME.Light)
+      StatusBar.setBarStyle('dark-content')
     }
   }, [themeName, changeTheme])
 
