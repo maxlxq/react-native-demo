@@ -8,27 +8,33 @@
  * @flow strict-local
  */
 
-import React, { useContext, useCallback } from 'react'
-import { View, Text, Pressable } from 'react-native'
+import React, { useContext, useMemo } from 'react'
+import { NavigationContainer, DefaultTheme } from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack'
+import HomeScreen from '@SCREENS/home'
+import Setting from '@SCREENS/control/Setting'
 import { ThemeContext } from '@THEME'
-import { APP_THEME } from '@CONSTANTS/App'
+import {APP_THEME} from '../constants/App'
+
+const Stack = createStackNavigator()
 
 const Main = () => {
-	const { styles = {}, themeName, changeTheme } = useContext(ThemeContext) || {}
-	const onChangeTheme = useCallback(() => {
-		if (APP_THEME.Light === themeName) {
-			changeTheme(APP_THEME.Dark)
-		} else {
-			changeTheme(APP_THEME.Light)
-		}
-	}, [themeName, changeTheme])
+	const { themeName, colors } = useContext(ThemeContext) || {}
+	const dark = useMemo(() => themeName === APP_THEME.Dark, [themeName])
+
+	const theme = {
+		...DefaultTheme,
+		dark,
+		colors,
+	}
+
 	return (
-		<View style={styles.container}>
-			<Text style={styles.bold}>Main</Text>
-			<Pressable onPress={onChangeTheme} style={styles.btnBox}>
-				<Text style={styles.btnText}>改变主题</Text>
-			</Pressable>
-		</View>
+		<NavigationContainer theme={theme}>
+			<Stack.Navigator>
+				<Stack.Screen name='Home' component={HomeScreen} />
+				<Stack.Screen name='Setting' component={Setting} />
+			</Stack.Navigator>
+		</NavigationContainer>
 	)
 }
 
