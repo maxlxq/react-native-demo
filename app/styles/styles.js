@@ -14,6 +14,13 @@ export const getStyles = colors => (StyleSheet.create({
     lineHeight: 24,
     fontFamily: 'PingFangSC-Regular',
   },
+  title: {
+    fontSize: 16,
+    color: colors.titleColor,
+    fontWeight: '500',
+    lineHeight: 24,
+    fontFamily: 'PingFangSC-Medium',
+  },
   btnText: {
     fontSize: 14,
     color: colors.btxTextColor,

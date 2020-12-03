@@ -4,5 +4,6 @@ module.exports = {
   rules: {
     'prettier/prettier': 0,
     semi: 0,
+    'jsx-quotes': 'off',
   },
 };
