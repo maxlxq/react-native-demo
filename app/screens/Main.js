@@ -10,11 +10,11 @@
 
 import React, { useContext, useCallback } from 'react'
 import { View, Text, Pressable } from 'react-native'
-import { ThemeContext } from '../theme'
+import { ThemeContext } from './App'
 import { APP_THEME } from '../constants/App'
 
 const Main = () => {
-	const { styles, themeName, changeTheme } = useContext(ThemeContext)
+	const { styles = {}, themeName, changeTheme } = useContext(ThemeContext) || {}
 	const onChangeTheme = useCallback(() => {
 		if (APP_THEME.Light === themeName) {
 			changeTheme(APP_THEME.Dark)
@@ -24,9 +24,9 @@ const Main = () => {
 	}, [themeName, changeTheme])
 	return (
 		<View style={styles.container}>
-			<Text style={styles.title}>Main</Text>
+			<Text style={styles.bold}>Main</Text>
 			<Pressable onPress={onChangeTheme}>
-				<Text>改变主题</Text>
+				<Text style={styles.btnText}>改变主题</Text>
 			</Pressable>
 		</View>
 	)
