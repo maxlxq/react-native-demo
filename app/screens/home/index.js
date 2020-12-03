@@ -8,24 +8,25 @@
  * @flow strict-local
  */
 
-import {ThemeContext} from '@THEME'
-import React, {useCallback, useContext} from 'react'
-import {Pressable, Text, View} from 'react-native'
+import {ThemeContext} from '@THEME';
+import React, {useCallback, useContext} from 'react';
+import {Pressable, Text, View} from 'react-native';
 
-const Home =
-    ({navigation}) => {
-      const {styles = {}} = useContext(ThemeContext) || {}
+const Home = ({navigation}) => {
+  const {styles = {}} = useContext(ThemeContext) || {};
 
-      const onPressSetting =
-          useCallback(() => navigation.navigate('Setting'), [ navigation ])
+  const onPressSetting = useCallback(() => navigation.navigate('Setting'), [
+    navigation,
+  ]);
 
-      return (
-          <View style = {styles.container}><Text style = {styles.title}>Home<
-              /Text>
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Home</Text>
       <Pressable onPress={onPressSetting} style={styles.btnBox}>
         <Text style={styles.btnText}>to Setting</Text>
-          </Pressable>
-    </View>)
-    }
+      </Pressable>
+    </View>
+  );
+};
 
-export default Home
+export default Home;
