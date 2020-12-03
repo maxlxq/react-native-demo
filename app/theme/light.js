@@ -10,6 +10,6 @@ const light = {
   text: '#333',
   border: '#dedede',
   notification: '#686868',
-}
+};
 
-export default light
+export default light;
