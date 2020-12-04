@@ -2,7 +2,7 @@ const light = {
   backgroundColor: '#fff',
   fontColor: '#333',
   titleColor: '#646464',
-  btxTextColor: '#cfcfcf',
+  btxTextColor: '#fefefe',
   btnColor: '#444841',
   primary: '#333', // 返回按钮
   background: '#fff',
@@ -10,6 +10,6 @@ const light = {
   text: '#333',
   border: '#dedede',
   notification: '#686868',
-}
+};
 
-export default light
+export default light;
