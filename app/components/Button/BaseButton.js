@@ -8,31 +8,17 @@
  * @flow strict-local
  */
 
-import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import React, {useContext} from 'react'
+import { Text, Pressable } from 'react-native'
+import { ThemeContext } from '@THEME'
 
-const BaseButton = () => {
+const BaseButton = ({ text, onPress }) => {
+  const { styles = {} } = useContext(ThemeContext) || {}
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>BaseButton</Text>
-    </View>
+    <Pressable onPress={onPress} style={styles.btnBox}>
+      <Text style={styles.btnText}>{text}</Text>
+    </Pressable>
   )
 }
 
 export default BaseButton
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#FFF',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  title: {
-    fontSize: 16,
-    fontWeight: '500',
-    lineHeight: 24,
-    color: '#333',
-    fontFamily: 'PingFangSC-Regular',
-  },
-})

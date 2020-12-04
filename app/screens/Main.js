@@ -10,13 +10,9 @@
 
 import React, { useContext, useMemo } from 'react'
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native'
-import { createStackNavigator } from '@react-navigation/stack'
-import HomeScreen from '@SCREENS/home'
-import Setting from '@SCREENS/control/Setting'
 import { ThemeContext } from '@THEME'
-import {APP_THEME} from '../constants/App'
-
-const Stack = createStackNavigator()
+import { APP_THEME } from '@CONSTANTS/App'
+import StackNavigator from '@NAVIGATION/StackNavigator'
 
 const Main = () => {
 	const { themeName, colors } = useContext(ThemeContext) || {}
@@ -30,10 +26,7 @@ const Main = () => {
 
 	return (
 		<NavigationContainer theme={theme}>
-			<Stack.Navigator>
-				<Stack.Screen name='Home' component={HomeScreen} />
-				<Stack.Screen name='Setting' component={Setting} />
-			</Stack.Navigator>
+			<StackNavigator />
 		</NavigationContainer>
 	)
 }
