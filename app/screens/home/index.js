@@ -18,6 +18,7 @@ const Home = ({ navigation }) => {
 
   const onPressSetting = useCallback(() => navigation.navigate('Setting'), [navigation])
   const onPressArticle = useCallback(() => navigation.navigate('ArticleDetail', { id: 'Detail ID' }), [navigation])
+  const onPressDrawer = useCallback(() => navigation.navigate('Drawer'), [navigation])
   const onSetHomeBadge = useCallback(() => navigation.setOptions({ tabBarBadge: Math.ceil(Math.random() * 100) }), [navigation])
 
   return (
@@ -26,6 +27,7 @@ const Home = ({ navigation }) => {
         <BaseButton onPress={onPressSetting} text='To Setting' />
         <BaseButton onPress={onPressArticle} text='To Article Detail' />
         <BaseButton onPress={onSetHomeBadge} text='Set Home Tab Badge' />
+        <BaseButton onPress={onPressDrawer} text='To Drawer Page' />
       </ScrollView>
     </SafeAreaView>
   )
