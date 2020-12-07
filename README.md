@@ -13,9 +13,9 @@ version: 0.63.3
 - [x] 深色模式切换
     - [x] 使用 context 实现
 - [ ] 路由跳转
-    - [x] 页面
-    - [x] Tab
-    - [ ] 抽屉
+    - [x] 页面 Stack
+    - [x] 导航 Tab
+    - [x] 抽屉 Drawer
     - [ ] 配置规则
 - [ ] Redux
     - [ ] action
