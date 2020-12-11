@@ -3237,6 +3237,11 @@ functional-red-black-tree@^1.0.1:
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
 
+fundebug-reactnative@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/fundebug-reactnative/-/fundebug-reactnative-0.1.1.tgz#6a3f5ee9aa10ffd718501b6e28a1349e1f7f0d62"
+  integrity sha512-1zaf4djn8pJAdurO9UdS1dWlqhf3yqUCqKpjXRPphGxUhTafB1BZ52PMe72Ml+/qcj8bFmXrOPW5tCoqG4/ozQ==
+
 gensync@^1.0.0-beta.1:
   version "1.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/gensync/-/gensync-1.0.0-beta.2.tgz#32a6ee76c3d7f52d46b2b1ae5d93fea8580a25e0"

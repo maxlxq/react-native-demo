@@ -10,7 +10,7 @@
 
 import React, {useContext} from 'react'
 import { Text, Pressable } from 'react-native'
-import { ThemeContext } from '@THEME'
+import { ThemeContext } from '@/THEME'
 
 const BaseButton = ({ text, onPress }) => {
   const { styles = {} } = useContext(ThemeContext) || {}
