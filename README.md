@@ -38,6 +38,8 @@ version: 0.63.3
     - [ ] umeng
     - [ ] baidu
 - [ ] 错误上报
+    - [x] fundebug
+    - [ ] sentry
 - [ ] 多环境
     - [ ] iOS
     - [ ] Android
@@ -67,3 +69,4 @@ version: 0.63.3
 参考资料：
 - [在 babel.config.js 中配置 alias](https://segmentfault.com/a/1190000023069333) 需重新执行 `yarn start --reset-cache`
 - [主题切换, context 使用](https://zh-hans.reactjs.org/docs/context.html) 配合 hook 中 useContext 使用，详见 `/screens/App.js` 相关
+- [添加 Fundebug 配置，捕获 RN 错误信息](https://www.fundebug.com/)
