@@ -10,7 +10,7 @@
 
 import React, { useContext, useState } from 'react'
 import { View, Text, TextInput } from 'react-native'
-import { ThemeContext } from '@THEME'
+import { ThemeContext } from '@/THEME'
 
 const ArticleDetail = ({ route }) => {
   const { styles = {}, colors = {} } = useContext(ThemeContext) || {}

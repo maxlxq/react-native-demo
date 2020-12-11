@@ -10,9 +10,9 @@
 
 import React, { useContext, useMemo } from 'react'
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native'
-import { ThemeContext } from '@THEME'
-import { APP_THEME } from '@CONSTANTS/App'
-import StackNavigator from '@NAVIGATION/StackNavigator'
+import { ThemeContext } from '@/THEME'
+import { APP_THEME } from '@/CONSTANTS/App'
+import StackNavigator from '@/NAVIGATION/StackNavigator'
 
 const Main = () => {
 	const { themeName, colors } = useContext(ThemeContext) || {}

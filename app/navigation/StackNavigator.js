@@ -1,9 +1,9 @@
 import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
-import TabNavigator from '@NAVIGATION/TabNavigator'
-import Setting from '@SCREENS/control/Setting'
-import ArticleDetail from '@SCREENS/article/ArticleDetail'
-import DrawerNavigator from '@NAVIGATION/DrawerNavigator'
+import TabNavigator from '@/NAVIGATION/TabNavigator'
+import Setting from '@/SCREENS/control/Setting'
+import ArticleDetail from '@/SCREENS/article/ArticleDetail'
+import DrawerNavigator from '@/NAVIGATION/DrawerNavigator'
 
 const Stack = createStackNavigator()
 

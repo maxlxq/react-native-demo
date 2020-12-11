@@ -10,8 +10,8 @@
 
 import React, { useContext, useCallback } from 'react'
 import { SafeAreaView, ScrollView, Text } from 'react-native'
-import { ThemeContext } from '@THEME'
-import BaseButton from '@COMPONENTS/Button/BaseButton'
+import { ThemeContext } from '@/THEME'
+import BaseButton from '@/COMPONENTS/Button/BaseButton'
 
 const Home = ({ navigation }) => {
   const { styles = {} } = useContext(ThemeContext) || {}

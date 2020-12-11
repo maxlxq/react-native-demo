@@ -8,8 +8,8 @@
  * @flow strict-local
  */
 
-import {APP_THEME} from '@CONSTANTS/App';
-import {ThemeContext} from '@THEME';
+import {APP_THEME} from '@/CONSTANTS/App';
+import {ThemeContext} from '@/THEME';
 import React, {useCallback, useContext} from 'react';
 import {Pressable, StatusBar, Text, View} from 'react-native';
 

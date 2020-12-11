@@ -1,7 +1,7 @@
 import React from 'react'
 import { createDrawerNavigator } from '@react-navigation/drawer'
-import Control from '@SCREENS/control'
-import DrawerTest from '@SCREENS/control/DrawerTest'
+import Control from '@/SCREENS/control'
+import DrawerTest from '@/SCREENS/control/DrawerTest'
 
 const Drawer = createDrawerNavigator()
 

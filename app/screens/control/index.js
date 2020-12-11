@@ -10,7 +10,7 @@
 
 import React, {useContext} from 'react'
 import {View, Text} from 'react-native'
-import {ThemeContext} from '@THEME'
+import {ThemeContext} from '@/THEME'
 
 const Index = () => {
   const {styles = {}} = useContext(ThemeContext) || {}
