@@ -10,9 +10,9 @@ import Demo from '@/SCREENS/demo'
 const Tab = createBottomTabNavigator()
 
 const getTabIcon = focused => ({
-  Home: focused ? 'add-circle' : 'add-circle-outline',
-  Profile: focused ? 'airplane' : 'airplane-outline',
-  Demo: focused ? 'airplane' : 'airplane-outline',
+  Home: focused ? 'home' : 'home-outline',
+  Profile: focused ? 'menu' : 'menu-outline',
+  Demo: focused ? 'barcode' : 'barcode-outline',
 })
 
 const TabNavigator = () => {

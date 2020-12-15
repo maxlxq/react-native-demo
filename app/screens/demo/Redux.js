@@ -28,7 +28,7 @@ const Redux = () => {
       <ScrollView>
         <Text style={styles.title}>Redux Simple Demo</Text>
         <BaseButton onPress={onIncrease} text='Increase Button' />
-        <Text>{count}</Text>
+        <Text style={styles.title}>{count}</Text>
         <BaseButton onPress={onDecrease} text='Decrease Button' />
       </ScrollView>
     </SafeAreaView>
