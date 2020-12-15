@@ -10,6 +10,8 @@
 
 import React, { useState, useMemo, useEffect } from 'react'
 import fundebug from 'fundebug-reactnative'
+import { Provider } from 'react-redux'
+import store from '@/STORE'
 import Main from '@/SCREENS/Main'
 import { APP_THEME } from '@/CONSTANTS/App'
 import { getStyles } from '@/STYLES/styles'
@@ -25,9 +27,11 @@ export const App = () => {
     })
   }, [])
   return (
-    <ThemeContext.Provider value={{ colors: themes[theme], themeName: theme, styles, changeTheme }}>
-      <Main />
-    </ThemeContext.Provider>
+    <Provider store={store}>
+      <ThemeContext.Provider value={{ colors: themes[theme], themeName: theme, styles, changeTheme }}>
+        <Main />
+      </ThemeContext.Provider>
+    </Provider>
   )
 }
 

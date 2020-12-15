@@ -18,11 +18,14 @@
     "babel-plugin-module-resolver": "^4.0.0",
     "fundebug-reactnative": "^0.1.1",
     "react": "16.13.1",
-    "react-native": "0.63.3",
+    "react-native": "0.63.4",
     "react-native-gesture-handler": "^1.9.0",
     "react-native-reanimated": "^1.13.2",
     "react-native-safe-area-context": "^3.1.9",
-    "react-native-screens": "^2.15.0"
+    "react-native-screens": "^2.15.0",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
+    "seamless-immutable": "^7.1.4"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
