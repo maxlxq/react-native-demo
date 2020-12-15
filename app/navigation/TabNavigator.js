@@ -5,12 +5,14 @@ import Ionicons from 'react-native-vector-icons/Ionicons'
 import { ThemeContext } from '@/THEME'
 import Home from '@/SCREENS/home'
 import Profile from '@/SCREENS/profile'
+import Demo from '@/SCREENS/demo'
 
 const Tab = createBottomTabNavigator()
 
 const getTabIcon = focused => ({
   Home: focused ? 'add-circle' : 'add-circle-outline',
   Profile: focused ? 'airplane' : 'airplane-outline',
+  Demo: focused ? 'airplane' : 'airplane-outline',
 })
 
 const TabNavigator = () => {
@@ -31,6 +33,7 @@ const TabNavigator = () => {
     >
       <Tab.Screen name="Home" component={Home} />
       <Tab.Screen name="Profile" component={Profile} />
+      <Tab.Screen name="Demo" component={Demo} />
     </Tab.Navigator>
   )
 }
