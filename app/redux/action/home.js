@@ -1,16 +1,17 @@
+import { createRequestTypes } from '@/UTILS/reduxHelper'
 
-export const INCREASE = 'INCREASE'
-export const DECREASE = 'DECREASE'
+export const INCREASE = createRequestTypes('INCREASE')
+export const DECREASE = createRequestTypes('DECREASE')
 
 export default {
   increase() {
     return {
-      type: INCREASE,
+      type: INCREASE.REQUEST,
     }
   },
   decrease() {
     return {
-      type: DECREASE,
+      type: DECREASE.REQUEST,
     }
   },
 }

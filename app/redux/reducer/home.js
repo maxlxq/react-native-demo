@@ -1,4 +1,4 @@
-
+import { createReducer } from '@/UTILS/reduxHelper'
 import Immutable from 'seamless-immutable'
 
 import {
@@ -8,19 +8,12 @@ import {
 
 export const INITIAL_STATE = Immutable({
   count: 1,
+  error: null,
 })
 
-const increase = state => state.merge({ count: state.count + 1 })
-const decrease = state => state.merge({ count: state.count - 1 })
-
-export const home = (state = INITIAL_STATE, action) => {
-  const { type } = action
-  switch (type) {
-    case INCREASE:
-      return increase(state)
-    case DECREASE:
-      return decrease(state)
-    default:
-      return state
-  }
-}
+export const home = createReducer(INITIAL_STATE, {
+  [INCREASE.SUCCESS]: state => state.merge({ count: state.count + 1 }),
+  [DECREASE.SUCCESS]: state => state.merge({ count: state.count - 1 }),
+  [INCREASE.FAILED]: (state, { error }) => state.merge({ error }),
+  [DECREASE.FAILED]: (state, { error }) => state.merge({ error }),
+})
