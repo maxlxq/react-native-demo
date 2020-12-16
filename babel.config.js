@@ -15,6 +15,7 @@ module.exports = {
           '@/STYLES': './app/styles',
           '@/THEME': './app/theme',
           '@/ASSETS': './app/assets',
+          '@/UTILS': './app/utils',
           '@/ACTION': './app/redux/action',
           '@/REDUCER': './app/redux/reducer',
           '@/SAGA': './app/redux/saga',

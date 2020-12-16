@@ -8,7 +8,7 @@ const appReducer = combineReducers({
 const reducer = (state, action) => {
   // console.log('reducer action.type:', state, action.type)
   let newState = state
-  if (action.type === 'LOGOUT') {
+  if (action.type === 'LOGOUT_REQUEST') {
     newState = {
       ...appReducer({}, {}),
       storage: state?.storage || {},

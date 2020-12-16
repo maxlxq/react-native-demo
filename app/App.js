@@ -11,14 +11,16 @@
 import React, { useState, useMemo, useEffect } from 'react'
 import fundebug from 'fundebug-reactnative'
 import { Provider } from 'react-redux'
-import store from '@/STORE'
-import Main from '@/SCREENS/Main'
+import configureStore from '@/STORE'
+import Main from './Main'
 import { APP_THEME } from '@/CONSTANTS/App'
 import { getStyles } from '@/STYLES/styles'
 import { FUNDEBUG_KEY } from '@/CONFIG'
 import { themes, ThemeContext } from '@/THEME'
 
-export const App = () => {
+const { store } = configureStore()
+
+const App = () => {
   const [theme, changeTheme] = useState(APP_THEME.Light)
   const styles = useMemo(() => getStyles(themes[theme]), [theme])
   useEffect(() => {
