@@ -3,12 +3,12 @@ version: 0.63.3
 
 - [ ] 页面基本组件
     - [x] View
-    - [ ] Text
+    - [x] Text
     - [ ] Pressable
     - [ ] ScrollView
     - [ ] FlatList
     - [ ] SectionList
-    - [ ] TextInput
+    - [x] TextInput
     - [ ] ...
 - [x] 深色模式切换
     - [x] 使用 context 实现
@@ -17,12 +17,18 @@ version: 0.63.3
     - [x] 导航 Tab
     - [x] 抽屉 Drawer
     - [ ] 配置规则
-- [ ] Redux
-    - [ ] action
-    - [ ] saga
-    - [ ] reducer
-    - [ ] store
+- [x] Redux
+    - [x] action
+    - [x] saga
+    - [x] reducer
+    - [x] store
 - [ ] 组件划分和组合规则
+    - [ ] 拆分规则
+    - [ ] 细粒度划分
+    - [ ] 受控组件和非受控组件
+    - [ ] 组合
+- [ ] 自定义Hook
+    - [ ] 倒计时
 - [ ] 静态资源
 - [ ] 国际化
     - [ ] i18n
@@ -70,3 +76,5 @@ version: 0.63.3
 - [在 babel.config.js 中配置 alias](https://segmentfault.com/a/1190000023069333) 需重新执行 `yarn start --reset-cache`
 - [主题切换, context 使用](https://zh-hans.reactjs.org/docs/context.html) 配合 hook 中 useContext 使用，详见 `/screens/App.js` 相关
 - [添加 Fundebug 配置，捕获 RN 错误信息](https://www.fundebug.com/)
+- [Redux 使用](https://www.redux.org.cn/)
+- [Saga 结合 Redux、Immutable 优化数据处理](https://redux-saga-in-chinese.js.org/)
