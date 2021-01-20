@@ -28,7 +28,7 @@ const Setting = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.bold}>Setting</Text>
-      <Pressable onPress={onChangeTheme} style={styles.btnBox}>
+      <Pressable testID='on_change_theme' onPress={onChangeTheme} style={styles.btnBox}>
         <Text style={styles.btnText}>改变主题</Text>
       </Pressable>
     </View>

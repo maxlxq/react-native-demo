@@ -12,10 +12,10 @@ import React, {useContext} from 'react'
 import { Text, Pressable } from 'react-native'
 import { ThemeContext } from '@/THEME'
 
-const BaseButton = ({ text, onPress }) => {
+const BaseButton = ({ text, onPress, testID }) => {
   const { styles = {} } = useContext(ThemeContext) || {}
   return (
-    <Pressable onPress={onPress} style={styles.btnBox}>
+    <Pressable testID={testID} onPress={onPress} style={styles.btnBox}>
       <Text style={styles.btnText}>{text}</Text>
     </Pressable>
   )

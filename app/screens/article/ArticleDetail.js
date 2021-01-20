@@ -28,6 +28,7 @@ const ArticleDetail = ({ route }) => {
         placeholderTextColor={colors.fontColor}
         value={text}
         onChangeText={setText}
+        testID="article_input"
       />
     </View>
   )

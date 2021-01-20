@@ -24,10 +24,10 @@ const Home = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
-        <BaseButton onPress={onPressSetting} text='To Setting' />
-        <BaseButton onPress={onPressArticle} text='To Article Detail' />
-        <BaseButton onPress={onSetHomeBadge} text='Set Home Tab Badge' />
-        <BaseButton onPress={onPressDrawer} text='To Drawer Page' />
+        <BaseButton testID='on_press_setting' onPress={onPressSetting} text='To Setting' />
+        <BaseButton testID='on_press_article' onPress={onPressArticle} text='To Article Detail' />
+        <BaseButton testID='on_set_badge' onPress={onSetHomeBadge} text='Set Home Tab Badge' />
+        <BaseButton testID='on_press_drawer' onPress={onPressDrawer} text='To Drawer Page' />
       </ScrollView>
     </SafeAreaView>
   )

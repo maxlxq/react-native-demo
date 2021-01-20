@@ -16,7 +16,7 @@ const DrawerTest = () => {
   const {styles = {}} = useContext(ThemeContext) || {}
 
   return (
-    <View style={styles.container}>
+    <View testID='drawer_page' style={styles.container}>
       <Text style={styles.title}>DrawerTest</Text>
     </View>
   )

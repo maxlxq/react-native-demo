@@ -5,3 +5,5 @@ android/
 app/utils/
 app/themes/
 app/config/
+
+e2e/

@@ -29,14 +29,16 @@ version: 0.63.3
     - [ ] 组合
 - [ ] 自定义Hook
     - [ ] 倒计时
+    - [ ] 节流 throttle
+    - [ ] 防抖 debounce
 - [ ] 静态资源
 - [ ] 国际化
     - [ ] i18n
 - [ ] 热更新
     - [ ] code-push
 - [ ] 动画
-- [ ] 自动化测试
-    - [ ] detox
+- [x] 自动化测试
+    - [x] detox
 - [ ] ESLint
 - [ ] Babel 配置
     - [ ] [Alias 配置](https://segmentfault.com/a/1190000023069333)
@@ -71,6 +73,7 @@ version: 0.63.3
 - [ ] 性能优化
     - [ ] 拆包
 - [ ] 微前端
+  - [ ] metro 分包
 
 参考资料：
 - [在 babel.config.js 中配置 alias](https://segmentfault.com/a/1190000023069333) 需重新执行 `yarn start --reset-cache`
@@ -78,3 +81,4 @@ version: 0.63.3
 - [添加 Fundebug 配置，捕获 RN 错误信息](https://www.fundebug.com/)
 - [Redux 使用](https://www.redux.org.cn/)
 - [Saga 结合 Redux、Immutable 优化数据处理](https://redux-saga-in-chinese.js.org/)
+- [Detox E2E 测试](https://github.com/maxlxq/detox/blob/master/Detox%20%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8.md)
