@@ -82,3 +82,7 @@ version: 0.63.3
 - [Redux 使用](https://www.redux.org.cn/)
 - [Saga 结合 Redux、Immutable 优化数据处理](https://redux-saga-in-chinese.js.org/)
 - [Detox E2E 测试](https://github.com/maxlxq/detox/blob/master/Detox%20%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8.md)
+  - 需手动安装 `jest-circus` 再执行
+- [图表库使用 react-native-vector-icons](https://github.com/oblador/react-native-vector-icons)
+  - Android 需在 android/build.gradle 中底部添加一行 `apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"`
+  - iOS 使用 CocoaPods 方式，在 `Podfile` 中途添加 `pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'` 并执行 `pod update`
