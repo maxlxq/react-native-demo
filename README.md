@@ -39,6 +39,8 @@ version: 0.63.3
 - [ ] 动画
 - [x] 自动化测试
     - [x] detox
+- [ ] 移动推送
+  - [ ] [阿里云推送](https://help.aliyun.com/document_detail/53574.html?spm=a2c4g.11174283.6.643.52eb6d16IL7vvE)
 - [ ] ESLint
 - [ ] Babel 配置
     - [ ] [Alias 配置](https://segmentfault.com/a/1190000023069333)
