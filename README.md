@@ -2,78 +2,77 @@ React-Native 相关功能介绍
 version: 0.63.3
 
 - [ ] 页面基本组件
-    - [x] View
-    - [x] Text
-    - [ ] Pressable
-    - [ ] ScrollView
-    - [ ] FlatList
-    - [ ] SectionList
-    - [x] TextInput
-    - [ ] ...
+  - [x] View
+  - [x] Text
+  - [ ] Pressable
+  - [ ] ScrollView
+  - [ ] FlatList
+  - [ ] SectionList
+  - [x] TextInput
+  - [ ] ...
 - [x] 深色模式切换
-    - [x] 使用 context 实现
+  - [x] 使用 context 实现
 - [ ] 路由跳转
-    - [x] 页面 Stack
-    - [x] 导航 Tab
-    - [x] 抽屉 Drawer
-    - [ ] 配置规则
+  - [x] 页面 Stack
+  - [x] 导航 Tab
+  - [x] 抽屉 Drawer
+  - [ ] 配置规则
 - [x] Redux
-    - [x] action
-    - [x] saga
-    - [x] reducer
-    - [x] store
+  - [x] action
+  - [x] saga
+  - [x] reducer
+  - [x] store
 - [ ] 组件划分和组合规则
-    - [ ] 拆分规则
-    - [ ] 细粒度划分
-    - [ ] 受控组件和非受控组件
-    - [ ] 组合
+  - [ ] 拆分规则
+  - [ ] 细粒度划分
+  - [ ] 受控组件和非受控组件
+  - [ ] 组合
 - [ ] 自定义Hook
-    - [ ] 倒计时
-    - [ ] 节流 throttle
-    - [ ] 防抖 debounce
+  - [ ] 倒计时
+  - [ ] 节流 throttle
+  - [ ] 防抖 debounce
 - [ ] 静态资源
 - [ ] 国际化
-    - [ ] i18n
+  - [ ] i18n
 - [ ] 热更新
-    - [ ] code-push
+  - [ ] code-push
 - [ ] 动画
 - [x] 自动化测试
-    - [x] detox
+  - [x] detox
 - [ ] 移动推送
   - [ ] [阿里云推送](https://help.aliyun.com/document_detail/53574.html?spm=a2c4g.11174283.6.643.52eb6d16IL7vvE)
 - [ ] ESLint
 - [ ] Babel 配置
-    - [ ] [Alias 配置](https://segmentfault.com/a/1190000023069333)
+  - [ ] [Alias 配置](https://segmentfault.com/a/1190000023069333)
 - [ ] 埋点
-    - [ ] umeng
-    - [ ] baidu
+  - [ ] umeng
+  - [ ] baidu
 - [ ] 错误上报
-    - [x] fundebug
-    - [ ] sentry
+  - [x] fundebug
+  - [ ] sentry
 - [ ] 多环境
-    - [ ] iOS
-    - [ ] Android
+  - [ ] iOS
+  - [ ] Android
 - [ ] 打包
-    - [ ] iOS
-    - [ ] Android
-    - [ ] 脚本打包
-    - [ ] fastlane
-    - [ ] fir
-    - [ ] 自动上传应用市场
+  - [ ] iOS
+  - [ ] Android
+  - [ ] 脚本打包
 - [ ] 原生方法导入RN
-    - [ ] OC代码编写模块
-    - [ ] Java代码编写模块
-    - [ ] RN引入使用
+  - [ ] OC代码编写模块
+  - [ ] Java代码编写模块
+  - [ ] RN引入使用
 - [ ] CI/CD
-    - [ ] jenkins自动打包
-    - [ ] 一键发布iOS
-    - [ ] 上传应用市场 Android
+  - [ ] fastlane
+  - [ ] fir
+  - [ ] jenkins自动打包
+  - [ ] 一键发布iOS
+  - [ ] 上传应用市场 Android
 - [ ] 支付
 - [ ] 第三方登录
 - [ ] 分享功能
 - [ ] 外链打开App
 - [ ] 性能优化
-    - [ ] 拆包
+  - [ ] 拆包
 - [ ] 微前端
   - [ ] metro 分包
 
