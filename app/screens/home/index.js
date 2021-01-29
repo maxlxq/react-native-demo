@@ -9,9 +9,10 @@
  */
 
 import React, { useContext, useCallback } from 'react'
-import { SafeAreaView, ScrollView, Text } from 'react-native'
+import { SafeAreaView, ScrollView } from 'react-native'
 import { ThemeContext } from '@/THEME'
 import BaseButton from '@/COMPONENTS/Button/BaseButton'
+import Move from '@/COMPONENTS/Animated/Move'
 
 const Home = ({ navigation }) => {
   const { styles = {} } = useContext(ThemeContext) || {}
@@ -28,6 +29,7 @@ const Home = ({ navigation }) => {
         <BaseButton testID='on_press_article' onPress={onPressArticle} text='To Article Detail' />
         <BaseButton testID='on_set_badge' onPress={onSetHomeBadge} text='Set Home Tab Badge' />
         <BaseButton testID='on_press_drawer' onPress={onPressDrawer} text='To Drawer Page' />
+        <Move text='Go' testID='on_press_move' />
       </ScrollView>
     </SafeAreaView>
   )
